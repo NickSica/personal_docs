@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a  sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Wisinglendows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Nicholas}{Sica}{\href{mailto:njs82@drexel.edu}{njs82@drexel.edu} | 973.647.9891 | www.github.com/NickSica}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Drexel University}
+\descript{BS in Computer Engineering}
+\descript{Minor in Computer Science}
+\location{Expected June 2021 | Philadelphia, PA}
+Dean's List Distinction \\
+A.J. Drexel Scholarship \\
+\location{ Cum. GPA: 3.76 }
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Computer Architecture \\ 
+High Performance Computer Architecture\\
+Digital Systems Projects \\
+Digital Logic Design \\
+Electric Circuits \\
+Differential Equations \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 1000 lines:}
+C/C++ \textbullet{} VHDL \textbullet{} Verilog \textbullet{} Python \\
+\location{Over 500 lines:}
+C\#.NET \textbullet{} MATLAB \textbullet{} Java \\
+\location{Familiar:}
+HTML \textbullet{} CSS \textbullet{} JavaScript \\
+
+\subsection{Software}
+Unity \textbullet{} AutoCAD \textbullet{} Creo Parametric \textbullet{} Visual Studio \textbullet{} Vivado \\
+
+\subsection{Hardware}
+FPGA \textbullet{} Arduino Uno \textbullet{} Raspberry Pi \\
+
+\subsection{Operating Systems}
+Windows 7-10 \textbullet{} Arch Linux \textbullet{} Ubuntu \\
+\sectionsep
+
+\section{Activities}
+Research Assistant, Drexel DISCO Lab\\ \hspace{20}2019-Present\\
+Member, Theta Chi Fraternity\\ \hspace{20}2017-Present\\
+Research Assistant, Drexel VANDAL\\ \hspace{20}2018-2019\\
+Team Leader, Sparta Robotics\\ \hspace{20}2015-2016\\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Employment Experience}
+
+\runsubsection {Susquehanna International Group}
+\descript{| FPGA Co-op}
+\location{September 2019 – April 2020 | Bala Cynwyd, Pennsylvania}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed test benches to test specific units \item Integrated new design features \item Wrote code for the in-house regression tests in C# \item Converted an old project to use the new platform \item Cleaned up the testing environment with scripts \item Integrated projects in TeamCity and fixed any issues \item Found and fixed bugs detailed in tickets
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ARRIS International}
+\descript{| Computer Engineering Co-op}
+\location{September 2018 – April 2019 | Horsham, Pennsylvania}
+\begin{tightemize}
+\item Determine what the customer wants and how plausible it is \item Integrate specifications into design \item Test device and fix any problems \item Learn and use the specific tools needed to achieve any tasks \item Present products to the customer and demonstrate its capabilities
+\end{tightemize}
+\sectionsep
+
+\runsubsection{G3 Technologies}
+\descript{| Computer Engineering Co-op }
+\location{September 2017 – April 2018 | Mt. Airy, Maryland}
+\begin{tightemize}
+\item Built and tested radios, following guidelines \item Soldered and fine tuned IF Amplifiers to be within a certain range of decibel gain \item Put together IF Amplifiers for use in radios \item Using Python, created a program for phase coherency testing \item Fine tuned the radio and program to accomplish phase coherency consistency throughout reboots 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Project Experience}
+\runsubsection{Neuromorphic Computing Research}
+\descript{| Research Assistant}
+\location{March 2019 – Present | Philadelphia, PA}
+\begin{tightemize} \item Learn about the specifics of the underlying architecture of a CPU \item Research and design different aspects of the system \item Present my findings to the team lead \item Discuss and decide on the best course of action to continue forward with the research \item Program the different systems in Verilog \item Design a cache with different replacement policies \item Implement approximate multiplication \item Design a memory controller
+\end{tightemize}
+\sectionsep
+
+\runsubsection{RISC V CPU}
+\descript{| Project Lead}
+\location{September 2018 – Present | Philadelphia, PA}
+\begin{tightemize} \item Self taught myself the different aspects of a processor \item Learned the RISC V instruction set architecture to implement it \item Learned SystemVerilog by implementing the processor \item Learned about best practices in designing FPGA code \item Made sure the code is synthesizable and runs correctly, fixing any bugs \item Convert it to a pipelined implementation \item Implement the caches and other blocks that were designed in tandem
+
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}
