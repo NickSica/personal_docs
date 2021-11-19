@@ -1,0 +1,373 @@
+%------------------------
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%     LAST UPDATED DATE
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%     TITLE NAME
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Nicholas Sica}} & Email : \href{mailto:njs82@drexel.edu}{njs82@drexel.edu}\\
+%   \href{http://sourabhbajaj.com/}{} & Mobile : 973-647-9891 \\
+% \end{tabular*}
+\begin{center}
+  {\Huge \scshape Nicholas Sica} \\ \vspace{1pt}
+  Drexel University, 3141 Chestnut Street, Bossone 405, Philadelphia, PA 19104 \\ \vspace{1pt}
+  \small \raisebox{-0.1\height}\faPhone\ 973-647-9891 ~ \href{mailto:njs82@drexel.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{njs82@drexel.edu}} ~
+  \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/nicholassica}}  ~
+  \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/NickSica}}
+  \vspace{-8pt}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+	  {Drexel University}{Philadelphia, PA}
+      {Ph.D. Student, Electrical Engineering; GPA: 0.0}{Expected June 2025}
+	\resumeSubheading
+      {Drexel University}{Philadelphia, PA}
+      {B.S., Computer Engineering; Major GPA: 3.82, Cum. GPA: 3.77}{September 2016 -- June 2021}
+	  %{}
+	  %{Cum. GPA: 3.77}
+  \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Employment Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+      {Electronics Company}{May 2020 -- August 2020}
+      {Software Engineer Intern}{City, State}
+
+    \resumeSubheading
+    {Drexel University}{September 2019 – April 2020}
+    {Teaching Assistant}{Bala Cynwyd, Pennsylvania}
+
+  \resumeSubheading
+    {Susquehanna International Group}{September 2019 – April 2020}
+    {FPGA Co-op}{Bala Cynwyd, Pennsylvania}
+\resumeItemListStart
+  \resumeItem{Designed test benches to test specific units}
+  \resumeItem{Integrated new design features}
+  \resumeItem{Wrote code for the in-house regression tests in C\#}
+  \resumeItem{Converted an old project to use the new platform}
+  \resumeItem{Cleaned up the testing environment with scripts}
+  \resumeItem{Integrated projects in TeamCity and fixed any issues}
+  \resumeItem{Found and fixed bugs detailed in tickets}
+\resumeItemListEnd
+
+  \resumeSubheading
+    {ARRIS International}{September 2018 – April 2019}
+    {Computer Engineering Co-op}{Horsham, Pennsylvania}
+\resumeItemListStart
+  \resumeItem{Determine what the customer wants and how plausible it is}
+  \resumeItem{Integrate specifications into design}
+  \resumeItem{Test device and fix any problems}
+  \resumeItem{Learn and use the specific tools needed to achieve any tasks}
+  \resumeItem{Present products to the customer and demonstrate its capabilities}
+\resumeItemListEnd
+
+  \resumeSubheading
+    {G3 Technologies}{September 2017 – April 2018}
+    {Computer Engineering Co-op }{Mt. Airy, Maryland}
+\resumeItemListStart
+  \resumeItem{Built and tested radios, following guidelines}
+  \resumeItem{Soldered and fine tuned IF Amplifiers to be within a certain range of decibel gain}
+  \resumeItem{Put together IF Amplifiers for use in radios}
+  \resumeItem{Using Python, created a program for phase coherency testing}
+  \resumeItem{Fine tuned the radio and program to accomplish phase coherency consistency throughout reboots}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+%\section{Experience}
+%  \resumeSubHeadingListStart
+%
+%    \resumeSubheading
+%      {Electronics Company}{May 2020 -- August 2020}
+%      {Software Engineer Intern}{City, State}
+%      \resumeItemListStart
+%        \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+%        \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+%        \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+%        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+%      \resumeItemListEnd
+%
+%    \resumeSubheading
+%      {Startup, Inc}{May 2019 -- August 2019}
+%      {Front End Developer Intern}{City, State}
+%      \resumeItemListStart
+%        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+%        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+%        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+%        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+%    \resumeItemListEnd
+%
+%  \resumeSubHeadingListEnd
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Drexel Distributed, Intelligent, Scalable Computing Lab}{March 2019 – June 2021}
+    {Research Assistant}{Philadelphia, PA}
+\resumeItemListStart
+  \resumeItem{Learn about the specifics of the underlying architecture of a CPU}
+  \resumeItem{Research and design different aspects of the system}
+  \resumeItem{Present my findings to the team lead}
+  \resumeItem{Discuss and decide on the best course of action to continue forward with the research}
+  \resumeItem{Program the different systems in Verilog}
+  \resumeItem{Design a cache with different replacement policies}
+  \resumeItem{Implement approximate multiplication}
+  \resumeItem{Design a memory controller}
+\resumeItemListEnd
+
+  \resumeSubheading
+    {RISC V CPU}{September 2018 – April 2020}
+    {Project Lead}{Philadelphia, PA}
+\resumeItemListStart
+  \resumeItem{Self taught myself the different aspects of a processor}
+  \resumeItem{Learned the RISC V instruction set architecture to implement it}
+  \resumeItem{Learned SystemVerilog by implementing the processor}
+  \resumeItem{Learned about best practices in designing FPGA code}
+  \resumeItem{Made sure the code is synthesizable and runs correctly, fixing any bugs}
+  \resumeItem{Convert it to a pipelined implementation}
+  \resumeItem{Implement the caches and other blocks that were designed in tandem}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+%\section{Projects}
+%    \vspace{-5pt}
+%    \resumeSubHeadingListStart
+%      \resumeProjectHeading
+%          {\textbf{Gym Reservation Bot} $|$ \emph{Python, Selenium, Google Cloud Console}}{January 2021}
+%          \resumeItemListStart
+%            \resumeItem{Developed an automatic bot using Python and Google Cloud Console to register myself for a timeslot at my school gym.}
+%            \resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
+%            \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
+%            \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+%          \resumeItemListEnd
+%          \vspace{-13pt}
+%      \resumeProjectHeading
+%          {\textbf{Ticket Price Calculator App} $|$ \emph{Java, Android Studio}}{November 2020}
+%          \resumeItemListStart
+%            \resumeItem{Created an Android application using Java and Android Studio to calculate ticket prices for trips to museums in NYC.}
+%            \resumeItem{Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.}
+%            \resumeItem{Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other.}
+%          \resumeItemListEnd
+%          \vspace{-13pt}
+%          \resumeProjectHeading
+%          {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+%          \resumeItemListStart
+%            \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
+%            \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
+%            \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+%          \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+\resumeItemListStart
+	\resumeItem{R. Kuttappa, L. Filippini, N. Sica and B. Taskin,
+		"Scalable Resonant Power Clock Generation for Adiabatic Logic Design,"
+		2021 IEEE Computer Society Annual Symposium on VLSI (ISVLSI), 2021,
+		pp. 338-342, doi: 10.1109/ISVLSI51109.2021.00068.}
+\resumeItemListEnd
+%\vspace{-15pt}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     HONORS AND REWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Academic Honors and Awards}
+\resumeItemListStart
+  \resumeItem{George Hill, Jr. Endowed Fellowship 2021-2024}
+  \resumeItem{Magna Cum Laude 2021}
+  \resumeItem{Dean's List Distinction 2016-2021}
+  \resumeItem{A. J. Drexel Scholarship 2016-2021}
+  \resumeItem{Drexel Grant 2016-2021}
+\resumeItemListEnd
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     RELEVANT COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Introduction to Quantum Computing
+                \item Compiler Design
+                \item High Performance Computer Architecture
+                \item Custom VLSI Design
+                \item Digital Systems Projects Embedded Design
+                \item Signals and Systems
+                \item Electric Circuits
+            \end{itemize}
+        \end{multicols}
+        %\vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, VHDL, SystemVerilog, Python, C\#.NET, MATLAB, Java, HTML, CSS, JavaScript} \\
+     \textbf{Software}{: Vivado, Virtuoso, Unity, AutoCAD, Creo Parametric, Visual Studio} \\
+     \textbf{Hardware}{: Arch Linux, Ubuntu, Windows 7-10} \\
+     \textbf{Operating Systems}{: FPGA, Arduino Uno, Raspberry Pi} \\
+    }}
+ \end{itemize}
+ %\vspace{-16pt}
+
+%-----------INVOLVEMENT---------------
+%\section{Leadership / Extracurricular}
+%    \resumeSubHeadingListStart
+%        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%            \resumeItemListStart
+%                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%            \resumeItemListEnd
+%
+%    \resumeSubHeadingListEnd
+
+\end{document}

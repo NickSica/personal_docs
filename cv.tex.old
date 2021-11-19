@@ -1,0 +1,178 @@
+\documentclass[]{deedy-resume-openfont}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Nicholas}{Sica}{\href{mailto:njs82@drexel.edu}{njs82@drexel.edu} | 973.647.9891 | www.github.com/NickSica}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Ph.D. Candidate, Electrical Engineering}
+\descript{Drexel University}
+\location{Expected June 2026 | Philadelphia, PA}
+\location{ GPA: 3.77 }
+
+\subsection{BS, Computer Engineering}
+\descript{Drexel University}
+\location{June 2021 | Philadelphia, PA}
+\location{ GPA: 3.77 }
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\subsection{Programming}
+C/C++, VHDL, SystemVerilog, Python, C\#.NET, MATLAB, Java, HTML, CSS, JavaScript \\
+
+\subsection{Software}
+Vivado, Virtuoso, Unity, AutoCAD, Creo Parametric, Visual Studio \\
+
+\subsection{Hardware}
+FPGA, Arduino Uno, Raspberry Pi \\
+
+\subsection{Operating Systems}
+Arch Linux, Ubuntu, Windows 7-10 \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Employment Experience}
+
+\runsubsection {Drexel University}
+\descript{| Teaching Assistant}
+\location{September 2019 – April 2020 | Bala Cynwyd, Pennsylvania}
+\sectionsep
+
+\runsubsection {Susquehanna International Group}
+\descript{| FPGA Co-op}
+\location{September 2019 – April 2020 | Bala Cynwyd, Pennsylvania}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+  \item Designed test benches to test specific units
+  \item Integrated new design features
+  \item Wrote code for the in-house regression tests in C\#
+  \item Converted an old project to use the new platform
+  \item Cleaned up the testing environment with scripts
+  \item Integrated projects in TeamCity and fixed any issues
+  \item Found and fixed bugs detailed in tickets
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ARRIS International}
+\descript{| Computer Engineering Co-op}
+\location{September 2018 – April 2019 | Horsham, Pennsylvania}
+\begin{tightemize}
+  \item Determine what the customer wants and how plausible it is 
+  \item Integrate specifications into design
+  \item Test device and fix any problems
+  \item Learn and use the specific tools needed to achieve any tasks
+  \item Present products to the customer and demonstrate its capabilities
+\end{tightemize}
+\sectionsep
+  
+\runsubsection{G3 Technologies}
+\descript{| Computer Engineering Co-op }
+\location{September 2017 – April 2018 | Mt. Airy, Maryland}
+\begin{tightemize}
+	\item Built and tested radios, following guidelines
+  \item Soldered and fine tuned IF Amplifiers to be within a certain range of decibel gain
+  \item Put together IF Amplifiers for use in radios
+  \item Using Python, created a program for phase coherency testing
+  \item Fine tuned the radio and program to accomplish phase coherency consistency throughout reboots 
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Experience}
+\runsubsection{Drexel Distributed, Intelligent, Scalable Computing Lab}
+\descript{| Research Assistant}
+\location{March 2019 – June 2021 | Philadelphia, PA}
+\begin{tightemize}
+  \item Learn about the specifics of the underlying architecture of a CPU
+  \item Research and design different aspects of the system
+  \item Present my findings to the team lead
+  \item Discuss and decide on the best course of action to continue forward with the research
+  \item Program the different systems in Verilog
+  \item Design a cache with different replacement policies
+  \item Implement approximate multiplication
+  \item Design a memory controller
+\end{tightemize}
+\sectionsep
+
+\runsubsection{RISC V CPU}
+\descript{| Project Lead}
+\location{September 2018 – April 2020 | Philadelphia, PA}
+\begin{tightemize}
+	\item Self taught myself the different aspects of a processor
+  \item Learned the RISC V instruction set architecture to implement it
+  \item Learned SystemVerilog by implementing the processor
+  \item Learned about best practices in designing FPGA code
+  \item Made sure the code is synthesizable and runs correctly, fixing any bugs
+  \item Convert it to a pipelined implementation
+  \item Implement the caches and other blocks that were designed in tandem
+\end{tightemize}
+\sectionsep
+  
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+\begin{tightemize}
+	\item R. Kuttappa, L. Filippini, N. Sica and B. Taskin, 
+		"Scalable Resonant Power Clock Generation for Adiabatic Logic Design," 
+		2021 IEEE Computer Society Annual Symposium on VLSI (ISVLSI), 2021, 
+		pp. 338-342, doi: 10.1109/ISVLSI51109.2021.00068.
+\end{tightemize}
+\sectionsep
+  
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HONORS AND REWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Academic Honors and Awards}
+\begin{tightemize}
+  \item George Hill, Jr. Endowed Fellowship 2021-2024
+  \item Magna Cum Laude 2021 
+  \item Dean's List Distinction 2016-2021
+  \item A. J. Drexel Scholarship 2016-2021
+  \item Drexel Grant 2016-2021
+\end{tightemize}
+\sectionsep
+  
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Relevant Coursework}
+Introduction to Quantum Computing \\
+Compiler Design \\
+High Performance Computer Architecture \\
+Custom VLSI Design \\
+Digital Systems Projects Embedded Design \\
+Signals and Systems\\
+Electric Circuits \\
+\sectionsep
+
+\end{document}
