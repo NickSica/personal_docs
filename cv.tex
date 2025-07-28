@@ -84,6 +84,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\phdSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -98,7 +107,9 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\item\small{
+    \textbf{#1}{: #2 \vspace{-5pt}}
+  }\vspace{-4pt}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -135,8 +146,8 @@
   {\Huge \scshape Nicholas Sica} \\ \vspace{1pt}
   Drexel University, 3141 Chestnut Street, Bossone 405, Philadelphia, PA 19104 \\ \vspace{1pt}
   \small \raisebox{-0.1\height}\faPhone\ 973-647-9891 ~ \href{mailto:njs82@drexel.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{njs82@drexel.edu}} ~
-  \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/nicholassica}}  ~
-  \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/NickSica}}
+  \href{https://linkedin.com/in/nicholassica/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/nicholassica}}  ~
+  \href{https://github.com/NickSica}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/NickSica}}
   \vspace{-8pt}
 \end{center}
 
@@ -145,9 +156,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \phdSubheading
 	  {Drexel University}{Philadelphia, PA}
-      {Ph.D. Student, Electrical Engineering; GPA: 0.0}{Expected June 2025}
+      {Ph.D. Student, Electrical Engineering}{September 2021 -- Current}
+      {Drexel VLSI and Architecture Lab, Advisor Dr. Baris Taskin}
 	\resumeSubheading
       {Drexel University}{Philadelphia, PA}
       {B.S., Computer Engineering; Major GPA: 3.82, Cum. GPA: 3.77}{September 2016 -- June 2021}
@@ -160,108 +172,53 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Employment Experience}
 \resumeSubHeadingListStart
-\resumeSubheading
-      {Electronics Company}{May 2020 -- August 2020}
-      {Software Engineer Intern}{City, State}
-
-    \resumeSubheading
-    {Drexel University}{September 2019 – April 2020}
-    {Teaching Assistant}{Bala Cynwyd, Pennsylvania}
+    %\resumeSubheading
+    %{Drexel University}{September 2021 – Present}
+    %{Teaching Assistant}{Philadelphia, Pennsylvania}
 
   \resumeSubheading
     {Susquehanna International Group}{September 2019 – April 2020}
     {FPGA Co-op}{Bala Cynwyd, Pennsylvania}
 \resumeItemListStart
-  \resumeItem{Designed test benches to test specific units}
-  \resumeItem{Integrated new design features}
-  \resumeItem{Wrote code for the in-house regression tests in C\#}
-  \resumeItem{Converted an old project to use the new platform}
-  \resumeItem{Cleaned up the testing environment with scripts}
-  \resumeItem{Integrated projects in TeamCity and fixed any issues}
-  \resumeItem{Found and fixed bugs detailed in tickets}
+  \resumeItem{Architected and evaluated new design features and built test benches in VHDL}
+  \resumeItem{Iterated upon in-house regression tests in C\# and Python}
 \resumeItemListEnd
 
   \resumeSubheading
     {ARRIS International}{September 2018 – April 2019}
     {Computer Engineering Co-op}{Horsham, Pennsylvania}
 \resumeItemListStart
-  \resumeItem{Determine what the customer wants and how plausible it is}
-  \resumeItem{Integrate specifications into design}
-  \resumeItem{Test device and fix any problems}
-  \resumeItem{Learn and use the specific tools needed to achieve any tasks}
-  \resumeItem{Present products to the customer and demonstrate its capabilities}
+  \resumeItem{Incorporated customer specifications into circuit design}
 \resumeItemListEnd
 
   \resumeSubheading
     {G3 Technologies}{September 2017 – April 2018}
     {Computer Engineering Co-op }{Mt. Airy, Maryland}
 \resumeItemListStart
-  \resumeItem{Built and tested radios, following guidelines}
-  \resumeItem{Soldered and fine tuned IF Amplifiers to be within a certain range of decibel gain}
-  \resumeItem{Put together IF Amplifiers for use in radios}
-  \resumeItem{Using Python, created a program for phase coherency testing}
-  \resumeItem{Fine tuned the radio and program to accomplish phase coherency consistency throughout reboots}
+  \resumeItem{Soldered and fine-tuned IF Amplifiers to be within a certain range of decibel gain}
+  \resumeItem{Spearheaded the implementation of a phase coherency testing platform in Python}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-\vspace{-16pt}
-
-%-----------EXPERIENCE-----------
-%\section{Experience}
-%  \resumeSubHeadingListStart
-%
-%    \resumeSubheading
-%      {Electronics Company}{May 2020 -- August 2020}
-%      {Software Engineer Intern}{City, State}
-%      \resumeItemListStart
-%        \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
-%        \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
-%        \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
-%        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
-%      \resumeItemListEnd
-%
-%    \resumeSubheading
-%      {Startup, Inc}{May 2019 -- August 2019}
-%      {Front End Developer Intern}{City, State}
-%      \resumeItemListStart
-%        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
-%        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
-%        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
-%        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
-%    \resumeItemListEnd
-%
-%  \resumeSubHeadingListEnd
-
+\vspace{-15pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%     RESEARCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Research Experience}
+\section{Undergraduate Research Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {Drexel Distributed, Intelligent, Scalable Computing Lab}{March 2019 – June 2021}
-    {Research Assistant}{Philadelphia, PA}
+    {Drexel Distributed, Intelligent, Scalable Computing Lab}{September 2019 – April 2020}
+    {Undergraduate Researcher}{Philadelphia, PA}
 \resumeItemListStart
-  \resumeItem{Learn about the specifics of the underlying architecture of a CPU}
-  \resumeItem{Research and design different aspects of the system}
-  \resumeItem{Present my findings to the team lead}
-  \resumeItem{Discuss and decide on the best course of action to continue forward with the research}
-  \resumeItem{Program the different systems in Verilog}
-  \resumeItem{Design a cache with different replacement policies}
-  \resumeItem{Implement approximate multiplication}
-  \resumeItem{Design a memory controller}
+  \resumeItem{Designed and tested a cache with different replacement policies, approximate multiplier, and memory controlled in Verilog}
 \resumeItemListEnd
 
   \resumeSubheading
-    {RISC V CPU}{September 2018 – April 2020}
-    {Project Lead}{Philadelphia, PA}
+    {Drexel VLSI and Architecture Lab}{April 2019 – June 2021}
+    {Undergraduate Researcher}{Philadelphia, PA}
 \resumeItemListStart
-  \resumeItem{Self taught myself the different aspects of a processor}
-  \resumeItem{Learned the RISC V instruction set architecture to implement it}
-  \resumeItem{Learned SystemVerilog by implementing the processor}
-  \resumeItem{Learned about best practices in designing FPGA code}
-  \resumeItem{Made sure the code is synthesizable and runs correctly, fixing any bugs}
-  \resumeItem{Convert it to a pipelined implementation}
-  \resumeItem{Implement the caches and other blocks that were designed in tandem}
+  \resumeItem{Investigated the different aspects of a processor and unique instruction set architectures}
+  \resumeItem{Researched and built a pipelined RISC V CPU in Verilog}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 \vspace{-15pt}
@@ -302,53 +259,41 @@
 %%     PUBLICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Publications}
-\resumeItemListStart
-	\resumeItem{R. Kuttappa, L. Filippini, N. Sica and B. Taskin,
+\begin{enumerate}[leftmargin=15.0pt]
+\resumeItem{R. Kuttappa, L. Filippini, N. Sica and B. Taskin,
 		"Scalable Resonant Power Clock Generation for Adiabatic Logic Design,"
 		2021 IEEE Computer Society Annual Symposium on VLSI (ISVLSI), 2021,
 		pp. 338-342, doi: 10.1109/ISVLSI51109.2021.00068.}
-\resumeItemListEnd
-%\vspace{-15pt}
-\sectionsep
+\end{enumerate}\vspace{-5pt}
+\vspace{-15pt}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%     HONORS AND REWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Academic Honors and Awards}
-\resumeItemListStart
-  \resumeItem{George Hill, Jr. Endowed Fellowship 2021-2024}
-  \resumeItem{Magna Cum Laude 2021}
-  \resumeItem{Dean's List Distinction 2016-2021}
-  \resumeItem{A. J. Drexel Scholarship 2016-2021}
-  \resumeItem{Drexel Grant 2016-2021}
-\resumeItemListEnd
-
+\resumeSubHeadingListStart
+  \resumeSubItem{George Hill, Jr. Endowed Fellowship}{2021-2024}
+  \resumeSubItem{Magna Cum Laude}{2021}
+  \resumeSubItem{Dean's List Distinction}{2016-2021}
+  \resumeSubItem{A. J. Drexel Scholarship}{2016-2021}
+  \resumeSubItem{Drexel Grant}{2016-2021}
+\resumeSubHeadingListEnd
+\vspace{-8pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%     RELEVANT COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Relevant Coursework}
-    %\resumeSubHeadingListStart
-        \begin{multicols}{4}
-            \begin{itemize}[itemsep=-5pt, parsep=3pt]
-                \item\small Introduction to Quantum Computing
-                \item Compiler Design
-                \item High Performance Computer Architecture
-                \item Custom VLSI Design
-                \item Digital Systems Projects Embedded Design
-                \item Signals and Systems
-                \item Electric Circuits
-            \end{itemize}
-        \end{multicols}
-        %\vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
+Introduction to Quantum Computing, Compiler Design, High Performance Computer Architecture, VLSI Design I,
+Custom VLSI Design, Digital Systems Projects Embedded Design, Signals and Systems, Electric Circuits
+\vspace{-8pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0.0in, label={}]
     \small{\item{
      \textbf{Languages}{: C/C++, VHDL, SystemVerilog, Python, C\#.NET, MATLAB, Java, HTML, CSS, JavaScript} \\
      \textbf{Software}{: Vivado, Virtuoso, Unity, AutoCAD, Creo Parametric, Visual Studio} \\
